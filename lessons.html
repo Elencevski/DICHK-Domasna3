@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Lessons</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styleLessons.css"
+      <script src="jsLessons"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-md navbar-light" style="background-color: deepskyblue">
+    <div class="container">
+      <a id="scoutster" style="color: white; font-size: large; font-style: italic;
+    font-weight: bold;" href="home.html"><i class="bi bi-film"></i>Learning Spanish</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+              aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item m-auto">
+            <a class="nav-link active" style="color: white; font-style: italic;
+    font-weight: bold;" href="lessons.html">Lessons</a>
+          </li>
+          <li class="nav-item m-auto">
+            <a class="nav-link active" style="color: white; font-style: italic;
+    font-weight: bold;" href="stories.html">Stories</a>
+          </li>
+          <li class="nav-item m-auto" >
+            <a class="nav-link active" style="color: white; font-style: italic;
+    font-weight: bold;" href="flashcards.html">FlashCards</a>
+          </li>
+
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <li class="nav-item">
+            <a class="btn btn-danger btn-sm ml-3" href="register.html">
+              <i class="fa fa-shopping-cart"></i> Logout
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="container-fluid bg-info">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><span class="label label-warning" id="qid">2</span> How do you say "The woman is big"</h3>
+      </div>
+      <div class="modal-body">
+        <div class="col-xs-3 col-xs-offset-5">
+          <div id="loadbar" style="display: none;">
+            <div class="blockG" id="rotateG_01"></div>
+            <div class="blockG" id="rotateG_02"></div>
+            <div class="blockG" id="rotateG_03"></div>
+            <div class="blockG" id="rotateG_04"></div>
+            <div class="blockG" id="rotateG_05"></div>
+            <div class="blockG" id="rotateG_06"></div>
+            <div class="blockG" id="rotateG_07"></div>
+            <div class="blockG" id="rotateG_08"></div>
+          </div>
+        </div>
+
+        <div class="quiz" id="quiz" data-toggle="buttons">
+          <label class="element-animation1 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="1">La mujer es grande</label>
+          <label class="element-animation2 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="2">El nino es pequeno</label>
+          <label class="element-animation3 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="3">El gato es simpatico</label>
+          <label class="element-animation4 btn btn-lg btn-primary btn-block"><span class="btn-label"><i class="glyphicon glyphicon-chevron-right"></i></span> <input type="radio" name="q_answer" value="4">4 El anmal es grande</label>
+        </div>
+      </div>
+      <div class="modal-footer text-muted">
+        <span id="answer"></span>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+<div class="container" style="justify-content: center; text-align: center">
+  <a href="levels.html" type="button">Submit to see at what level is your knowledge</a>
+
+</div>
+</body>
+</html>
